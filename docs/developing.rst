@@ -7,7 +7,7 @@ edX Proctoring Developer Guide
 How do I use proctoring on devstack?
 ------------------------------------
 * Create a test course
-    * Follow the steps here: Including Proctored Exams in Your Course
+    * Follow the steps here: `Including Proctored Exams in Your Course <https://edx.readthedocs.io/projects/edx-partner-course-staff/en/latest/proctored_exams/proctored_enabling.html>`_
 * Read the `learner guide for using proctoring <http://edx.readthedocs.io/projects/edx-guide-for-students/en/latest/completing_assignments/SFD_proctored_exams.html>`_
 * Start out by trying a practice proctored exam to understand the process
 * The Instructor Dashboard has a "Special Exams" tab for administering proctoring
