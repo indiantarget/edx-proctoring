@@ -86,6 +86,12 @@ Then back in your host shell::
     pip install -e .[server]
     python -m mockprock.server
 
+If you use Z shell (zsh), the command ``pip install -e .[server]`` will fail with ``zsh: no matches found: .[server]``. This is because `zsh uses square brackets for globbing/pattern matching`_. You should instead run the following command.::
+
+   pip install -e ".[server]"
+
+.. _"zsh uses square brackets for globbing/pattern matching": https://stackoverflow.com/questions/30539798/zsh-no-matches-found-requestssecurity
+
 The command will tell you you have to supply an client_id and client_secret. It'll open your browser to the Django admin page where you should create or use an existing credential. You'll also need to add the user associated with the credential to the "mockprock_review" Django group. You can create the group at ``/admin/auth/group/``. Note the client_id and client_secret and restart the server::
 
     python -m mockprock.server {client_id} {client_secret}
